@@ -1,0 +1,511 @@
+
+:root{
+    --pri: #134601;
+    --sec: #B6FFA1;
+    --tri1: #FEFFA7;
+    --tri2: #FFE700;
+    --white: rgb(247, 241, 241);
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri);
+    color: var(--white);
+}
+
+section.allelms{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+}
+.allelms .allFeatures{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 40px;
+}
+.allelms header{
+    width: 100%;
+    height: 250px;
+    background-image: url(https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 30px;
+}
+header .header1 h1{
+ font-size: 45px;
+ font-weight: 900;
+}
+header .header1 h4{
+ font-size: 45px;
+ font-weight: 500;
+}
+header .header2 h2{
+    font-size: 35px;
+}
+header .header1 h3{
+    font-size: 25px;
+}
+header .header1 h4{
+    font-size: 25px;
+}
+.elems{
+    background-color: rgb(84, 64, 37);
+    border-radius: 10px;
+    font-size: 16px;
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 20px rgb(96, 72, 72);
+            box-shadow: 0px 5px 20px rgb(96, 72, 72);
+}
+.elems img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.elems h2{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.elems:active{
+    scale: 0.95;
+}
+
+.fullelems{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pri);
+    padding: 30px;
+    display: none;
+    position: absolute;
+}
+.back{
+   position: absolute;
+   top: 5%;
+   right: 5%; 
+   padding: 10px 26px;
+   background-color: var(--tri2);
+   color: rgb(27, 26, 26);
+   border-radius: 10px;
+   font-size: 19px;
+   font-weight: 700;
+   border: none;
+   cursor: pointer;
+}
+.back:active{
+    scale: 0.97;
+}
+.todo-list-fullpage h2{
+    font-size: 40px;
+}
+.todo-list-fullpage .todo-containor{
+   height: 80%;
+   width: 100%;
+   margin-top: 30px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+}
+.todo-list-fullpage .todo-containor .addTask{
+    width: 32%;
+    height: 100%;
+     background-color: var(--tri1);
+     border-radius: 15px;
+}
+.todo-list-fullpage .todo-containor .addTask form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 25px;
+}
+.todo-containor .addTask form input#task-input{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--pri);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.todo-containor .addTask form textarea{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--pri);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.todo-containor .addTask form button{
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--tri2);
+    color: rgb(21, 21, 21);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.todo-containor .addTask form button:active{
+    scale: 0.97;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+
+.todo-list-fullpage .todo-containor .allTask{
+    width: 65%;
+    height: 100%;
+     background-color: var(--tri1);
+     border-radius: 15px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: start;
+         -ms-flex-align: start;
+             align-items: flex-start;
+     padding: 25px;
+     overflow: auto;
+}
+.task{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    background-color: var(--tri2);
+    padding: 10px 35px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.task h4{
+    color: var(--pri);
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5px;
+}
+.task h4 span{
+    background-color: red;
+    color: wheat;
+    font-size: 10px;
+    padding: 3px 5px;
+    border-radius: 50px;
+}
+.task h4 span.true{
+    opacity: 1;
+}
+.task h4 span.false{
+    opacity: 0;
+}
+.task button{
+    padding: 15px 25px;
+    font-size: 15px;
+    background-color: var(--pri);
+    color: wheat;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.task button:active{
+    scale: 0.96;
+}
+.mark-imp{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px;
+    padding: 0px 12px;
+    width: 100%;
+    background-color: var(--pri);
+    margin-bottom: 20px;
+}
+.mark-imp input{
+    scale: 1.5;
+}
+
+.daily-planer-fullpage h2{
+    font-size: 40px;
+}
+.daily-planer-fullpage .day-planner{
+    background-color: var(--tri2);
+    height: 85%;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: auto;
+}
+.daily-planer-fullpage .day-planner .day-planner-time{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 49%;
+    margin-bottom: 10px;
+}
+.day-planner .day-planner-time p{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+.day-planner .day-planner-time input{
+    padding: 10px 40px;
+    width: 100%;
+    background-color: var(--pri);
+    border: none;
+    font-size: 26px;
+    padding-top: 25px;
+    outline: none;
+    color: wheat;
+}
+.motivational-fullpage{
+    display: block;
+    position: relative;
+}
+.motivation-fullpage-containor {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.motivational-fullpage .motivational-containor{
+    height: 350px;
+    width: 60%;
+    position: relative;
+}
+.motivational-fullpage .motivational-containor::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--tri2);
+    border-radius: 50px;
+    scale: 1.1;
+    -webkit-filter: blur(100px);
+            filter: blur(100px);
+    z-index: 8;
+}
+.motivational-containor .motivation-wrapper{
+    z-index: 10;
+    width: 100%;
+    position: absolute; 
+    border-radius: 30px;
+    background-color: var(--pri);
+    padding: 15px;
+}
+.motivation-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+     border-radius: 20px;
+}
+.motivation-1 h2{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: right;
+    background-color: var(--tri2);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(89, 57, 57);
+}
+.motivation-2{
+    padding: 10px;
+    margin-top: 20px;
+}
+.motivation-3{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+     border-radius: 20px;
+}
+.motivation-3 h3{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: right;
+    background-color: var(--tri2);
+    padding: 20px;
+    border-radius: 20px;
+    color: rgb(89, 57, 57);
+}
+.motivational-containor .motivation-wrapper img{
+    height: 70px;
+    position: absolute;
+    right: 2%;
+    top: 7%;
+}
+.pomodoro-fullpage{
+    display: block;
+    position: relative;
+}
+.pomodoro-fullpage h1{
+   font-size: 45px;
+}
+.pomodoro-fullpage .session{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-color: var(--tri2);
+    padding: 12px 25px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.pomodoro-fullpage .pomo-timer{
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+   text-align: center;
+}
+.pomo-timer h1{
+    font-size: 120px;
+}
+.pomo-timer button{
+    background-color: var(--tri2);
+    padding: 12px 35px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 8px 8px 8px rgb(50, 1, 1);
+            box-shadow: 8px 8px 8px rgb(50, 1, 1);
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    font-weight: 700;
+}
+.pomo-timer button:active{
+    -webkit-box-shadow: 0px 0px 0px rgb(50, 1, 1);
+            box-shadow: 0px 0px 0px rgb(50, 1, 1);
+}
+
+.theme{
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    background-color: #f0efef;
+    padding: 5px 8px;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+.theme i{
+    color: black;
+    font-weight: 700;
+}
+.theme:active{
+    scale: 0.96;
+}
